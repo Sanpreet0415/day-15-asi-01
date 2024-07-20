@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Note: Change the script type to "module" for TypeScript -->
+    <script type="module">
+      // Import the React app from the TypeScript file
+      import { App } from './src/main.tsx';
+      import React from 'react';
+      import ReactDOM from 'react-dom';
+
+      // Render the React app inside the #root div
+      ReactDOM.render(
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
